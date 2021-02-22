@@ -1,0 +1,1011 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/font/Allura/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(./assets/font/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(./assets/font/Roboto/Roboto-Light.ttf);
+}
+
+/************************************************************************
+*****************************  BODY  ************************************
+************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+/************************************************************************
+*****************************  HEADER  ************************************
+************************************************************************/
+.bloc-header {
+  background: url(./assets/img/bg-slider-06.jpg) center/cover;
+  height: 80vh;
+  color: white;
+}
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  padding: 30px 0;
+  align-items: center;
+  width: 100%;
+}
+
+#logo h2 {
+  font-family: "font-1";
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#navigation ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "font-3";
+}
+
+#navigation li {
+  transition: 0.2s;
+}
+
+#navigation li:hover {
+  color: #745742;
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+#picto-header ul {
+  display: flex;
+  justify-content: center;
+}
+
+#picto-header li {
+  padding: 0 20px;
+  transition: 0.2s;
+  font-size: 1.2rem;
+}
+
+#picto-header li:hover {
+  color: #745742;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 60px;
+}
+
+h1 {
+  font-family: "font-1";
+  font-size: 3.5rem;
+  color: #745742;
+}
+
+.welcome h2 {
+  font-family: "font-2";
+  font-size: 3rem;
+  letter-spacing: 15px;
+}
+
+.picto-titre {
+  margin: 50px 0;
+}
+
+.welcome h3 {
+  font-family: "font-3";
+  font-weight: lighter;
+  letter-spacing: 10px;
+  font-size: 0.9rem;
+}
+
+/************************************************************************
+*****************************  BLOC-1  ************************************
+************************************************************************/
+
+.bloc-1 {
+  display: flex;
+}
+
+.bloc-discover {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px dashed #997257;
+  margin: 20px;
+}
+#h2-bloc-disco {
+  margin-bottom: 30px;
+}
+#h2-bloc-disco h3 {
+  font-family: "font-1";
+  font-size: 3rem;
+  color: #745742;
+}
+
+#h2-bloc-disco h2 {
+  font-family: "font-2";
+  font-size: 1.7rem;
+}
+
+#picto-disco {
+  margin-bottom: 30px;
+}
+
+#p-disco p {
+  font-family: "font-3";
+  line-height: 25px;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.image-disco img {
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.russell-chef h3 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+.russell-chef h4 {
+  font-family: "font-3";
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.img-bloc-1 {
+  background: url(./assets/img/store-01.jpg) center/cover;
+  min-height: 60vh;
+  width: 100%;
+}
+
+/************************************************************************
+*****************************  BLOC-2  ************************************
+************************************************************************/
+
+.menu-bloc-2 {
+  background: #21201e;
+  padding-top: 80px;
+  height: 1000px;
+  position: relative;
+  z-index: 0;
+}
+
+.menu-bloc-2:after {
+  content: "";
+  background: url(./assets/img/bg-menu-01.jpg);
+  height: 60vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 406px;
+}
+.menu-bloc-2-top h2 {
+  font-family: "font-1";
+  font-size: 2.5rem;
+  text-align: center;
+  color: #745742;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#image-bloc-2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-bloc-2-top ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "font-2";
+  color: white;
+  margin: 0 20%;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.menu-bloc-2-top li {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu-bloc-2-top li:hover {
+  border-bottom: 2px solid #745742;
+  cursor: pointer;
+}
+
+/****************************************************************
+        *************************  MENU  **********************************
+        ******************************************************************/
+
+.menu {
+  width: 60%;
+  min-height: 400px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4;
+  margin: 0 auto;
+  border-top: 5px solid #af7746;
+  padding: 20px 0;
+}
+
+#italian {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding-bottom: 20px;
+}
+#img-menu-1 {
+  margin: 0 auto;
+}
+#img-menu-1 img {
+  border-radius: 150px;
+}
+
+#nom-recette-1 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-1 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+.prix {
+  font-family: "font-2";
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #ae7d51;
+}
+
+#fried {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding: 20px 0;
+}
+#img-menu-2 {
+  margin: 0 auto;
+}
+#img-menu-2 img {
+  border-radius: 150px;
+}
+
+#nom-recette-2 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-2 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+#tenu {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding: 20px 0;
+}
+#img-menu-3 {
+  margin: 0 auto;
+}
+#img-menu-3 img {
+  border-radius: 150px;
+}
+
+#nom-recette-3 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-3 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+#roast {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding: 20px 0;
+}
+#img-menu-4 {
+  margin: 0 auto;
+}
+#img-menu-4 img {
+  border-radius: 150px;
+}
+
+#nom-recette-4 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-4 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+#salted {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding: 20px 0;
+}
+#img-menu-5 {
+  margin: 0 auto;
+}
+#img-menu-5 img {
+  border-radius: 150px;
+}
+
+#nom-recette-5 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-5 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+#crab {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding: 20px 0;
+}
+#img-menu-6 {
+  margin: 0 auto;
+}
+#img-menu-6 img {
+  border-radius: 150px;
+}
+
+#nom-recette-6 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-6 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+#imported {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding: 20px 0;
+}
+#img-menu-7 {
+  margin: 0 auto;
+}
+#img-menu-7 img {
+  border-radius: 150px;
+}
+
+#nom-recette-7 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-7 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+#baked {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.336);
+  margin: 0px 10%;
+  padding: 20px 0;
+}
+#img-menu-8 {
+  margin: 0 auto;
+}
+#img-menu-8 img {
+  border-radius: 150px;
+}
+
+#nom-recette-8 h4 {
+  font-family: "font-2";
+  font-weight: lighter;
+}
+
+#nom-recette-8 p {
+  font-family: "font-3";
+  font-size: 1.3rem;
+}
+
+/****************************************************************
+        *************************  RESERVATION  *************************
+        ******************************************************************/
+
+.reservation-bloc {
+  background: #21201e;
+  min-height: 50vh;
+  padding-top: 120px;
+}
+
+.reservation {
+  width: 70%;
+  min-height: 40vh;
+  background: white;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+#bordure-reservation {
+  background: rgb(15, 15, 15);
+  position: relative;
+  min-height: 200px;
+}
+
+/********************************  RESERVATION LEFT  ******************************/
+
+.reservation-left {
+  margin: 20px;
+  border: 1px dashed rgb(243, 243, 243);
+  padding: 30px;
+  color: rgb(243, 243, 243);
+  text-align: center;
+}
+
+#titre-bloc-left h4 {
+  font-family: "font-1";
+  font-size: 3rem;
+  color: #745742;
+}
+
+#titre-bloc-left h5 {
+  font-family: "font-2";
+  margin-top: -25px;
+  font-size: 1.6rem;
+  margin-bottom: 20%;
+}
+
+#img-bloc-left {
+  margin: 20%;
+}
+#monday-friday {
+  margin-bottom: 20%;
+}
+
+#monday-friday h4 {
+  font-family: "font-2";
+  color: #745742;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+#monday-friday h5 {
+  font-family: "font-3";
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+#saturday-sunday {
+  margin-bottom: 35%;
+}
+
+#saturday-sunday h4 {
+  font-family: "font-2";
+  color: #745742;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+#saturday-sunday h5 {
+  font-family: "font-3";
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+#tel-reservation {
+  font-family: "font-2";
+  font-size: 1.4rem;
+  color: #745742;
+}
+
+/*************************************  RESERVATION RIGHT  ******************************************/
+
+.reservation-right {
+  text-align: center;
+  padding: 100px;
+}
+
+#titre-bloc-right h4 {
+  font-family: "font-1";
+  font-size: 3rem;
+  color: #745742;
+}
+
+#titre-bloc-right h5 {
+  font-family: "font-2";
+  font-size: 2rem;
+  margin-top: -20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#img-bloc-right {
+  margin-bottom: 40px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "people-select date-form time-form"
+    "name-form phone-form email-form";
+  margin-bottom: 50px;
+}
+
+#people-select,
+#date-form,
+#time-form,
+#name-form,
+#phone-form,
+#email-form {
+  padding: 10px;
+  margin: 10px;
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 100%;
+  outline: none;
+  width: 80%;
+}
+#people-select {
+  width: 86.5%;
+}
+#submit {
+  padding: 0px;
+  background: black;
+  border-radius: 100px;
+  color: white;
+  font-family: "font-2";
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+  height: 60px;
+  width: 30%;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+#submit:hover {
+  background: #745742;
+  cursor: pointer;
+}
+
+/*****************************************************************
+        *************************  OUR EVENT  *****************************
+        *********************************************************************/
+
+.upcoming-bloc {
+  background: #21201e;
+  padding-top: 100px;
+}
+
+#titre-upcoming {
+  text-align: center;
+}
+
+#titre-upcoming h4 {
+  font-family: "font-1";
+  font-size: 3rem;
+  color: #745742;
+}
+
+#titre-upcoming h5 {
+  font-family: "font-2";
+  color: white;
+  font-size: 2rem;
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+
+#picto-upcoming {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#grid-upcoming {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "bloc-upco-1 bloc-upco-2"
+    "bloc-upco-3 bloc-upco-2";
+  width: 60%;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+#bloc-upco-1 {
+  grid-area: bloc-upco-1;
+}
+
+#grid-container-1 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height: 200px;
+}
+
+#img-gc-1 {
+  background: url(./assets/img/event-01.jpg) center/cover;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre-gc-1 {
+  background: #21201e;
+  padding: 20px 30px;
+}
+
+.titre-gc-1 h4 {
+  font-family: "font-2";
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.titre-gc-1 h5 {
+  font-family: "font-3";
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+.background-gc {
+  background: white;
+}
+#gc-content-1 {
+  margin: 40px 5%;
+}
+#gc-content-1 h5 {
+  text-align: center;
+  font-family: "font-3";
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#gc-content-1 ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "font-3";
+  color: gray;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+#gc-content-1 h6 {
+  font-family: "font-3";
+  font-size: 0.9rem;
+}
+
+#bloc-upco-3 {
+  grid-area: bloc-upco-3;
+}
+
+#grid-container-3 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height: 200px;
+}
+
+#img-gc-3 {
+  background: url(./assets/img/event-02.jpg) center/cover;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre-gc-3 {
+  background: #21201e;
+  padding: 20px 30px;
+}
+
+.titre-gc-3 h4 {
+  font-family: "font-2";
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.titre-gc-3 h5 {
+  font-family: "font-3";
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+.background-gc {
+  background: white;
+}
+#gc-content-3 {
+  margin: 40px 5%;
+}
+#gc-content-3 h5 {
+  text-align: center;
+  font-family: "font-3";
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#gc-content-3 ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "font-3";
+  color: gray;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+#gc-content-3 h6 {
+  font-family: "font-3";
+  font-size: 0.9rem;
+}
+/**********************************************************  BLOC DROIT  ***********************************************************************/
+
+#bloc-upco-2 {
+  grid-area: bloc-upco-2;
+  background: url(./assets/img/event-03.jpg) center/cover;
+  height: 430px;
+}
+
+#bloc-left-upco {
+}
+
+.text-container {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  height: 390px;
+  margin-top: 20px;
+}
+
+.titre-gc-2 {
+  background: #21201e;
+  padding: 20px 30px;
+  width: 30px;
+  margin: 0 auto;
+  color: white;
+}
+
+.titre-gc-2 h4 {
+  font-family: "font-2";
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.titre-gc-2 h5 {
+  font-family: "font-3";
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+#gc-content-2 {
+  margin-top: 50px;
+}
+
+#gc-content-2 h5 {
+  font-family: "font-3";
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+#gc-content-2 ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "font-3";
+  color: gray;
+  font-size: 0.8rem;
+  margin-bottom: 70px;
+  letter-spacing: 2px;
+}
+
+#gc-content-2 h6 {
+  font-family: "font-3";
+  font-size: 0.9rem;
+}
+
+/*****************************************************************
+*************************  AVIS  **********************************
+*********************************************************************/
+
+.bloc-avis {
+  background: #21201e;
+  padding-top: 150px;
+  min-height: 790px;
+  position: relative;
+}
+
+.avis-container {
+  width: 50%;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  padding: 100px 100px;
+  height: 200px;
+  z-index: 10;
+  position: relative;
+}
+
+.avis-container::before {
+  content: "";
+  background: url(./assets/img/avatar-02.jpg) center/cover;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 150px;
+  top: -50px;
+}
+
+.avis-container p {
+  text-align: center;
+  font-family: "font-3";
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.avis-container h4 {
+  text-align: center;
+  font-family: "font-2";
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.avis-container h6 {
+  text-align: center;
+  font-family: "font-3";
+  color: #b67d54;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.bloc-avis:after {
+  content: "";
+  background: url(./assets/img/gmap.jpg) center/cover;
+  height: 40vh;
+  width: 100vw;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  z-index: 0;
+  top: 471px;
+}
+
+/*****************************************************************
+*************************  FOOTER  **********************************
+*********************************************************************/
+
+.footer-bloc {
+  display: flex;
+}
+
+#bloc-1-footer {
+  background: #131211;
+  color: white;
+  padding: 50px;
+  width: 50%;
+}
+
+.footer-container {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.footer-container h4 {
+  font-family: "font-1";
+  font-size: 3rem;
+  color: #745742;
+  margin-bottom: 20px;
+}
+
+.footer-container p {
+  font-family: "font-3";
+  color: rgba(128, 128, 128, 0.582);
+  line-height: 30px;
+}
+
+#bloc-2-footer {
+  background: #131211f5;
+  color: white;
+  padding: 50px;
+  width: 50%;
+}
+
+#bloc-2-footer label {
+  font-family: "font-2";
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+#lbl {
+  margin-bottom: 10px;
+}
+
+#ipt {
+  margin-bottom: 50px;
+}
+
+#ipt input {
+  background: #131211f5;
+  border: 0.2px solid #745742;
+  padding: 10px 10px;
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+#bloc-2-footer h6 {
+  font-family: "font-2";
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+#footer-picto {
+  display: flex;
+}
+
+#footer-picto ul {
+  display: flex;
+  padding: 5px 20px;
+}
+
+#footer-picto li {
+  padding: 0 20px;
+  color: rgba(128, 128, 128, 0.582);
+  font-size: 1.1rem;
+}
