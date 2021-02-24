@@ -876,7 +876,7 @@ form {
   background: white;
   position: relative;
   padding: 100px 100px;
-  height: 200px;
+  min-height: 200px;
   z-index: 10;
   position: relative;
 }
@@ -1014,8 +1014,245 @@ form {
 *************************  RESPONSIVE  ****************************
 *******************************************************************/
 
+@media screen and (max-width: 1200px) {
+  #italian {
+    margin: 0;
+  }
+  #nom-recette-1 p {
+    font-size: 1rem;
+  }
+  #img-menu-1 img {
+    height: 70px;
+  }
+
+  #fried {
+    margin: 0;
+  }
+  #nom-recette-2 p {
+    font-size: 1rem;
+  }
+  #img-menu-2 img {
+    height: 70px;
+  }
+
+  #tenu {
+    margin: 0;
+  }
+  #nom-recette-3 p {
+    font-size: 1rem;
+  }
+  #img-menu-3 img {
+    height: 70px;
+  }
+
+  #roast {
+    margin: 0;
+  }
+  #nom-recette-4 p {
+    font-size: 1rem;
+  }
+  #img-menu-4 img {
+    height: 70px;
+  }
+
+  #salted {
+    margin: 0;
+  }
+  #nom-recette-5 p {
+    font-size: 1rem;
+  }
+  #img-menu-5 img {
+    height: 70px;
+  }
+
+  #crab {
+    margin: 0;
+  }
+  #nom-recette-6 p {
+    font-size: 1rem;
+  }
+  #img-menu-6 img {
+    height: 70px;
+  }
+
+  #imported {
+    margin: 0;
+  }
+  #nom-recette-7 p {
+    font-size: 1rem;
+  }
+  #img-menu-7 img {
+    height: 70px;
+  }
+
+  #baked {
+    margin: 0;
+  }
+  #nom-recette-8 p {
+    font-size: 1rem;
+  }
+  #img-menu-8 img {
+    height: 70px;
+  }
+
+  #submit {
+    width: 50%;
+  }
+
+  #people-select,
+  #date-form,
+  #time-form,
+  #name-form,
+  #phone-form,
+  #email-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #grid-upcoming {
+    display: block;
+    width: 90%;
+  }
+
+  #bloc-upco-2 {
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+  #gc-content-2 h5 {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  #gc-content-2 ul {
+    margin: 0 20px;
+    margin-bottom: 40px;
+  }
+  #gc-content-1 h6 {
+    text-align: center;
+  }
+
+  #gc-content-3 h6 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: block;
+    width: 80%;
+  }
+
+  .reservation-bloc {
+    padding-top: 300px;
+  }
+
+  .reservation {
+    display: block;
+  }
+
+  .reservation-left {
+    border: none;
+  }
+
+  #img-bloc-left {
+    margin: 10px auto;
+  }
+
+  #titre-bloc-left h5 {
+    margin-bottom: 10px;
+  }
+
+  #monday-friday {
+    margin-bottom: 10px;
+  }
+
+  #saturday-sunday {
+    margin-bottom: 10px;
+  }
+
+  .reservation-right {
+    padding: 0 100px;
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 700px) {
-  .navbar {
+  #navigation ul {
     display: none;
+  }
+  .grid-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #picto-header li {
+    padding: 0 10px;
+  }
+  .img-bloc-1 {
+    display: none;
+  }
+
+  .menu-bloc-2-top li {
+    padding: 5px;
+    font-size: 1rem;
+    border-bottom: none;
+  }
+
+  form {
+    display: block;
+  }
+
+  #submit {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  .reservation {
+    width: 90%;
+  }
+  .reservation-right {
+    padding: 0 50px;
+    padding-bottom: 30px;
+  }
+
+  .footer-bloc {
+    display: block;
+    position: relative;
+  }
+
+  #bloc-1-footer {
+    display: none;
+  }
+  #bloc-2-footer {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  #footer-picto {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer-picto h6 {
+    display: none;
+  }
+
+  #footer-picto ul {
+    margin-bottom: 20px;
+  }
+
+  .avis-container {
+    width: 80%;
+    padding: 60px 30px;
+  }
+
+  #ipt {
+    margin-bottom: 20px;
+  }
+
+  .bloc-avis {
+    min-height: 600px;
+    padding-bottom: 20px;
   }
 }
