@@ -1251,8 +1251,16 @@ form {
     margin-bottom: 20px;
   }
 
+  #ipt input {
+    width: 50%;
+  }
+
   .bloc-avis {
     min-height: 600px;
     padding-bottom: 20px;
+  }
+
+  .welcome h3 {
+    display: none;
   }
 }
